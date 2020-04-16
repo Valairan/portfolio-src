@@ -1,85 +1,178 @@
 <!DOCTYPE html>
 <html>
+<title>DARYL VALAIRAN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Daryl Valairan</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="LogoSuperSmall.png" style="width:25%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>ACADEMICS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-<body>
-    <nav class="navbar navbar-light navbar-expand-lg sticky-top navigation-clean" style="height: 120px;min-height: auto;background-color: rgb(0,0,0);">
-        <div class="container"><a class="navbar-brand" href="#" style="color: rgb(255,255,255);">DARYL VALAIRAN</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="filter: brightness(200%) contrast(200%) grayscale(100%) hue-rotate(360deg) invert(100%) saturate(200%);"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link text-center" style="color: rgb(181,181,181);">My resume</a></li>
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="true" href="#" style="color: rgb(181,181,181);">My Interests</a>
-                        <div class="dropdown-menu show" role="menu"><a class="dropdown-item" role="presentation" href="#">Apps</a><a class="dropdown-item" role="presentation" href="https://valairan.itch.io">Games</a><a class="dropdown-item" role="presentation" href="https://github.com/valairan">Other projects</a></div>
-                    </li>
-                </ul>
-        </div>
-        </div>
-    </nav>
-    <div id="promo">
-        <div class="jumbotron">
-            <h1>I am Daryl Valairan</h1>
-            <p>Just a guy interested in software. I make small apps and games which you can check out in the links below.</p>
-        </div>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#education" class="w3-bar-item w3-button" style="width:25% !important">ACADEMICS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Daryl Valairan.</h1>
+    <p><h3>Software Engineer</h3></p>
+    <img src="DarylPortfolio.png" alt="boy" class="w3-image" width="600" height="600">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2 class="w3-text-light-grey">Daryl Valairan</h2>
+    <hr style="width:220px" class="w3-opacity">
+    <p>Have always been interested in software and the relationship between humans and technology. Wouldn't mind making the world a better place. 
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">C, C++, C#</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
     </div>
-    <div data-bs-parallax-bg="true" class="def" style="background-position: center;background-size: cover;background-image: url(&quot;assets/img/853.PNG&quot;);background-repeat: no-repeat;/*max-height: 720px;*/align-content: center;height: auto;">
-        <div style="align-self: center;">
-            <div class="card-columns text-center" id="gamesBG" style="padding: 24px;">
-                <div class="card text-center" style="max-width: 400px;padding: 16px;"><img class="rounded card-img-top w-100 d-block" data-bs-hover-animate="pulse" src="assets/img/DroneThumbs.png" style="max-width: 360px;maxight: 160px;">
-                    <div class="card-body">
-                        <h4 class="card-title" style="font-size: 20px;">Space Drones</h4>
-                        <p class="card-text" style="font-size: 16px;">Wanna fly drones on Mars?</p><a class="btn btn-primary" role="button" href="SpaceDrones.html">Play</a></div>
-                </div>
-                <div class="card text-center" style="max-width: 400px;padding: 16px;align-content: center;"><img class="rounded card-img-top w-100 d-block" data-bs-hover-animate="pulse" src="assets/img/DroneThumbs.png" style="max-width: 360px;">
-                    <div class="card-body">
-                        <h4 class="card-title" style="font-size: 20px;">The Hunt</h4>
-                        <p class="card-text" style="font-size: 16px;">Hunt for treasure in the pyramids.</p><a class="btn btn-primary" role="button" href="index-1.html">Play</a></div>
-                </div>
-                <div class="card" style="max-width: 400px;padding: 16px;"><img class="rounded card-img-top w-100 d-block" data-bs-hover-animate="pulse" src="assets/img/DroneThumbs.png" style="max-width: 360px;maxight: 160px;">
-                    <div class="card-body">
-                        <h4 class="card-title" style="font-size: 20px;">Coming soon...</h4>
-                        <p class="card-text" style="font-size: 16px;">I'll have something up here soon...</p><a class="btn btn-primary" role="button" href="SpaceDrones.html">Play</a></div>
-                </div>
-            </div>
-        </div>
+    <p class="w3-wide">Unity Engine</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
     </div>
-    <div>
-        <h1 class="text-center">Connect with me...</h1>
-        <div class="table-responsive">
-            <table class="table">
-                <thead>
-                    <tr class="text-center"></tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="text-center"><a class="text-center" href="https://twitter.com/valairan"><i class="fab fa-twitter-square" data-bs-hover-animate="rubberBand" style="font-size: 45px;padding: 6px;filter: brightness(200%) contrast(200%) grayscale(100%) hue-rotate(360deg) invert(100%) saturate(200%);color: rgb(255,255,255);"></i></a></td>
-                        <td
-                            class="text-center"><a class="text-center text-info" href="https://github.com/valairan" target=""><i class="fa fa-github-square" data-bs-hover-animate="rubberBand" style="font-size: 45px;padding: 6px;filter: brightness(200%) contrast(200%) grayscale(100%) hue-rotate(360deg) invert(100%) saturate(200%);color: rgb(255,255,255);"></i></a></td>
-                            <td
-                                class="text-center"><a class="text-center" href="https://open.spotify.com/user/jbyn23vhmpci3gtj50nfik2e0?si=Vy-3z7kmQHGzsEmZ2x6biA"><i class="fab fa-spotify" data-bs-hover-animate="rubberBand" style="font-size: 45px;padding: 6px;filter: brightness(200%) contrast(200%) grayscale(100%) hue-rotate(360deg) invert(100%) saturate(200%);color: rgb(255,255,255);"></i></a></td>
-                                <td
-                                    class="text-center"><a class="text-center" href="https://www.youtube.com/channel/UCIkmt73lXPyXwCc9vE6hw3Q"><i class="fa fa-youtube-square" data-bs-hover-animate="rubberBand" style="font-size: 45px;padding: 6px;filter: brightness(200%) contrast(200%) grayscale(100%) hue-rotate(360deg) invert(100%) saturate(200%);color: rgb(255,255,255);"></i></a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <p class="w3-wide">Mobile App Development</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">User Interface Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Inframind</span><br>
+        <span class="w3-wide">TCS</span><br>
+        Finalist
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Gameathon</span><br>
+        <span class="w3-wide">SECET</span><br>
+        Winner
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">SCIMIT'19</span><br>
+        <span class="w3-wide">MVIT</span><br>
+        Winner
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+    <br><br>
+
+
+    <button class="w3-button w3-white w3-padding-large w3-hover-black"><a href=user_profile.pdf>Download Resume</a></button>
+    
+    <!-- Grid for pricing tables -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="education">
+    <h3 class="w3-padding-16 w3-text-light-grey">My Education</h3>
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32"><h2>Sri Manakula Vinayagar Engineering College<h2></li>
+          <li class="w3-padding-16 w3-xlarge">RECENT GPA - 5.2</li>
+          <li class="w3-padding-16 w3-xlarge">CGPA - 7.1</li>
+        </ul>
+        <br><br><br><br><br><br>        
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32"><h2>Petit Seminaire Higher Secondary School<h2></li>
+            <li class="w3-padding-16 w3-xlarge">HSC - 81%</li>
+            <li class="w3-padding-16 w3-xlarge">SSLC - 95%</li>
+        </ul> 
+
+      
+    </div>
+
+  <!-- End About Section -->
+  </div>
+  
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Pondicherry, IN</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 97896 47335</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: darylvalairan@outlook.com</p>
+    </div><br>
+    <p><h2>Let's get in touch.</h2></p>
+
+    <!-- <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form> -->
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center">
+    <a href=https://www.github.com/Valairan><i>GitHub -</a>
+    <a href=https://www.instagram.com/thefirstvalairan>Instagram -</a>
+    <a href=https://www.twitter.com/valairan>Twitter</i></a>
+
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
-
 </html>
