@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js" type="text/javascript"></script>
+    <!-- *** Import tfjs-vis - optional *** -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis/dist/tfjs-vis.umd.min.js"></script>
+    <!-- Import the page's JavaScript to do some stuff -->
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/49ed8dd66c.js" crossorigin="anonymous"></script>
+    <script>
+        function change() {
+            let tgl = document.getElementById("tgl");
+            let body = document.body;
+            if (tgl.className == "fas fa-moon") {
+                tgl.className = "fas fa-sun";
+                body.style.background = "radial-gradient(#B3E2EB, #5FB9D5) no-repeat fixed";
+                body.style.color = "#2C3545";
+                tgl.style.color = "#CC5D03";
+            }
+            else {
+                tgl.className = "fas fa-moon";
+                body.style.background = "radial-gradient(#00264D, #000B18) no-repeat fixed";
+                body.style.color = "#FFF";
+                tgl.style.color = "#FFF";
+            }
+        }
+    </script>
+    
+</head>
+<style>
+    /* day: #FFF;
+   night: #2C3545; */
+    body {
+        color: #fff;
+        background: radial-gradient(#00264D, #000B18) no-repeat fixed;
+        display: flex;
+        -webkit-transition: all 0.4s linear;
+        transition: cubic-bezier();
+    }
+
+    .nightMode {
+        size: 200px;
+        color: #FFF;
+        -webkit-transition: all 0.6s linear;
+        transition: cubic-bezier();
+        transition-duration: .3s;
+    }
+
+    .header {
+        font-size: x-large;
+        font: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+
+    }
+</style>
+
+<title>Sign Language to Text</title>
+
+<body onload="script.loadModel()">
+
+    <table style="width: 100%;">
+        <tr>
+            <th style="  width: 100%; padding: 1%;">
+                <div class="header">Sign Language to Text</div>
+            </th>
+        </tr>
+        <tr>
+            <th style=" width: 100%; padding: 1%;">
+                <div id="tgl" onclick="change()" class="nightMode fas fa-moon"></div>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <section id="demos" class="invisible">
+                    <div id="liveView" class="webcam">
+                        <button id="webcamButton" style="margin-left: auto ;">Enable Webcam</button>
+                        <video id="webcam" autoplay width="640" height="480"></video>
+                    </div>
+                </section>
+
+            </th>
+        </tr>
+        <tr>
+            <th>
+                
+            </th>
+        </tr>
+    </table>
+
+</body>
+
+</html>
