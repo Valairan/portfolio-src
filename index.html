@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />  
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 </head>
 <title>DARYL VALAIRAN</title>
 <meta charset="UTF-8">
@@ -12,190 +13,246 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+  html {
+    scroll-behavior: smooth;
+  }
 
-html{
-  scroll-behavior: smooth;
-}
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif
+  }
 
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+
+  /* Set the width of the sidebar to 120px */
+  .w3-sidebar {
+    width: 120px;
+    background: #222;
+  }
+
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {
+    margin-left: 120px
+  }
+
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 600px) {
+    #main {
+      margin-left: 0
+    }
+  }
 </style>
+
 <body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="LogoSuperSmall.png" style="width:25%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#work" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-paper-plane w3-xxlarge"></i>
-    <p>MY WORK</p>
-  </a>
-  <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>ACADEMICS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="LogoSuperSmall.png" style="width:25%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#work" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-paper-plane w3-xxlarge"></i>
+      <p>MY WORK</p>
+    </a>
+    <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>ACADEMICS</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
 
-</nav>
+  </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#education" class="w3-bar-item w3-button" style="width:25% !important">ACADEMICS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#education" class="w3-bar-item w3-button" style="width:25% !important">ACADEMICS</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
   </div>
-</div>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Daryl Valairan.</h1>
-    <p><h3>Software Engineer</h3></p>
-    <img src="BustDaryl.svg" alt="boy" class="w3-image" width="45%" height="45%">
-  </header>
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Daryl Valairan.</h1>
+      <p>
+      <h3>Software Engineer</h3>
+      </p>
+      <img src="BustDaryl.svg" alt="boy" class="w3-image" width="45%" height="45%">
+    </header>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-    <h2 class="w3-text-light-grey">Daryl Valairan</h2>
-    <hr style="width:220px" class="w3-opacity">
-    <p>Have always been interested in software and the relationship between humans and technology. Wouldn't mind making the world a better place. Look for "valairan" wherever you need to find me. It's almost always my username.
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">C, C++, C#</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Unity Engine</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
-    </div>
-    <p class="w3-wide">Mobile App Development</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div>
-    <p class="w3-wide">User Interface Design</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">Inframind</span><br>
-        <span class="w3-wide">TCS</span><br>
-        Finalist
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <h2 class="w3-text-light-grey">Daryl Valairan</h2>
+      <hr style="width:220px" class="w3-opacity">
+      <p>Have always been interested in software and the relationship between humans and technology. Wouldn't mind
+        making the world a better place. Look for "valairan" wherever you need to find me. It's almost always my
+        username.
+      </p>
+      <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+      <p class="w3-wide">C, C++, C#</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:95%"></div>
       </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">Gameathon</span><br>
-        <span class="w3-wide">SECET</span><br>
-        Winner
+      <p class="w3-wide">Unity Engine</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:90%"></div>
       </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">SCIMIT'19</span><br>
-        <span class="w3-wide">MVIT</span><br>
-        Winner
+      <p class="w3-wide">Mobile App Development</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
       </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">Gyanith'18</span><br>
-        <span class="w3-wide">NIT-PY</span><br>
-        Winner
+      <p class="w3-wide">Web Design</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
       </div>
-    </div>
-    <br><br>
+      <p class="w3-wide">User Interface Design</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+      </div><br>
+
+      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">Inframind</span><br>
+          <span class="w3-wide">TCS</span><br>
+          Finalist
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">Gameathon</span><br>
+          <span class="w3-wide">SECET</span><br>
+          Winner
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">SCIMIT'19</span><br>
+          <span class="w3-wide">MVIT</span><br>
+          Winner
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">Gyanith'18</span><br>
+          <span class="w3-wide">NIT-PY</span><br>
+          Winner
+        </div>
+      </div>
+      <br><br>
 
 
-    <button class="w3-button w3-white w3-padding-large w3-hover-black"><a target="_blank" href=user_profile.pdf>Download Resume</a></button>
+      <button class="w3-button w3-white w3-padding-large w3-hover-black"><a target="_blank"
+          href=user_profile.pdf>Download Resume</a></button>
 
-    <div class="w3-padding-64 w3-content w3-text-grey" id = "work">
-      <h2 class="w3-text-light-grey">My Work</h2>
-  
-      <ul class="w3-ul w3-white w3-center ">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32"><h2>How Low Can You Go?<h2></li>
-          <li class="w3-padding-16 w3-xlarge">A game I made for the Brackeys game jam. Click on this card to play. The highest score is 200.</li>
+      <div class="w3-padding-64 w3-content w3-text-grey" id="work">
+        <h2 class="w3-text-light-grey">My Work</h2>
+        <a href="BallGame/BallGame.html">
+          <ul class="w3-ul w3-white w3-center ">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">
+              <h2>How Low Can You Go?<h2>
+            </li>
+            <li class="w3-padding-16 w3-xlarge">A game I made for the Brackeys game jam. Click on this card to play. The
+              highest score is 200.</li>
             <li class="w3-padding-16 w3-xlarge">Status : Available on Itch.io</li>
+          </ul>
+        </a>
 
-     </ul> 
-     <br><br><br><br><br><br>        
-
-     <ul class="w3-ul w3-white w3-center ">
-      <li class="w3-dark-grey w3-xlarge w3-padding-32"><h2>Escape the Pyramids.<h2></li>
-        <li class="w3-padding-16 w3-xlarge">One of the first games I made. Click on this card to play. Available in Itch.io. Can you survive?</li>
+        <br><br><br><br><br><br>
+        <a href="https://valairan.itch.io/">
+        <ul class="w3-ul w3-white w3-center ">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">
+            <h2>Escape the Pyramids.<h2>
+          </li>
+          <li class="w3-padding-16 w3-xlarge">One of the first games I made. Click on this card to play. Available in
+            Itch.io. Can you survive?</li>
           <li class="w3-padding-16 w3-xlarge">Status : Available on Itch.io</li>
-        
-   </ul> 
+        </ul>
+      </a>
 
-   <br><br><br><br><br><br>        
 
-     <ul class="w3-ul w3-white w3-center ">
-      <li class="w3-dark-grey w3-xlarge w3-padding-32"><h2>Tiramisu<h2></li>
-        <li class="w3-padding-16 w3-xlarge">Ever wanted a ride from one end of the campus to another end? Tiramisu literally means pick me up. 
-          A ride sharing app for use just within you organisation</li>
+      <br><br><br><br><br><br>
+      <a href="InventorySystem/index.html">
+      <ul class="w3-ul w3-white w3-center ">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">
+          <h2>A demo of an Inventory and Shop system I made<h2>
+        </li>
+        <li class="w3-padding-16 w3-xlarge">I made this for an interview. I didn't get the job but what the heck.</li>
+        <li class="w3-padding-16 w3-xlarge">Status : Available on GitHub</li>
+      </ul>
+    </a>
+        <br><br><br><br><br><br>
+
+        <ul class="w3-ul w3-white w3-center ">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">
+            <h2>Tiramisu<h2>
+          </li>
+          <li class="w3-padding-16 w3-xlarge">Ever wanted a ride from one end of the campus to another end? Tiramisu
+            literally means pick me up.
+            A ride sharing app for use just within you organisation</li>
           <li class="w3-padding-16 w3-xlarge">Status : In production</li>
-                
-  
-    </div>
-    
-    <!-- Grid for pricing tables -->
-    <div class="w3-padding-64 w3-content w3-text-grey" id="education">
-    <h3 class="w3-padding-16 w3-text-light-grey">My Education</h3>
+
+
+      </div>
+
+      <!-- Grid for pricing tables -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="education">
+        <h3 class="w3-padding-16 w3-text-light-grey">My Education</h3>
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32"><h2>Sri Manakula Vinayagar Engineering College<h2></li>
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">
+            <h2>Sri Manakula Vinayagar Engineering College<h2>
+          </li>
           <li class="w3-padding-16 w3-xlarge">RECENT GPA - 5.2</li>
           <li class="w3-padding-16 w3-xlarge">CGPA - 7.1</li>
         </ul>
-        <br><br><br><br><br><br>        
+        <br><br><br><br><br><br>
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32"><h2>Petit Seminaire Higher Secondary School<h2></li>
-            <li class="w3-padding-16 w3-xlarge">HSC - 81%</li>
-            <li class="w3-padding-16 w3-xlarge">SSLC - 95%</li>
-        </ul> 
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">
+            <h2>Petit Seminaire Higher Secondary School<h2>
+          </li>
+          <li class="w3-padding-16 w3-xlarge">HSC - 81%</li>
+          <li class="w3-padding-16 w3-xlarge">SSLC - 95%</li>
+        </ul>
 
-      
+
+      </div>
+
+      <!-- End About Section -->
     </div>
 
-  <!-- End About Section -->
-  </div>
-  
 
 
 
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+      <h2 class="w3-text-light-grey">Contact Me</h2>
+      <hr style="width:200px" class="w3-opacity">
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Pondicherry, IN</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 97896 47335</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: me@darylvalairan.tech</p>
-    </div><br>
-    <p><h2>Let's get in touch.</h2></p>
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Pondicherry, IN</p>
+        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 97896 47335</p>
+        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: me@darylvalairan.tech
+        </p>
+      </div><br>
+      <p>
+      <h2>Let's get in touch.</h2>
+      </p>
 
-    <!-- <form action="/action_page.php" target="_blank">
+      <!-- <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
@@ -206,29 +263,34 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         </button>
       </p>
     </form> -->
-  <!-- End Contact Section -->
-  </div>
-  
-    <!-- Footer -->
-  <footer class="w3-row w3-center w3-section">
-    <div class="w3-quarter w3-section">
-      <a target="_blank" style="text-decoration: none" href=https://www.github.com/Valairan><span class="w3-small">GitHub</span></a>
+      <!-- End Contact Section -->
     </div>
-    <div class="w3-quarter w3-section">
-      <a target="_blank" style="text-decoration: none" href=https://www.instagram.com/thefirstvalairan><span class="w3-small">Instagram</span></a>
-    </div>
-    <div class="w3-quarter  w3-section">
-      <a target="_blank" style="text-decoration: none" href=https://www.twitter.com/valairan><span class="w3-small">Twitter</span></a>
-    </div>
-    <div class="w3-quarter w3-section">
-      <a target="_blank" style="text-decoration: none" href=https://www.youtube.com/channel/UCIkmt73lXPyXwCc9vE6hw3Q><span class="w3-small">YouTube</span></a>
-    </div>
-  
-  <!-- End footer -->
-  </footer>
 
-<!-- END PAGE CONTENT -->
-</div>
+    <!-- Footer -->
+    <footer class="w3-row w3-center w3-section">
+      <div class="w3-quarter w3-section">
+        <a target="_blank" style="text-decoration: none" href=https://www.github.com/Valairan><span
+            class="w3-small">GitHub</span></a>
+      </div>
+      <div class="w3-quarter w3-section">
+        <a target="_blank" style="text-decoration: none" href=https://www.instagram.com/thefirstvalairan><span
+            class="w3-small">Instagram</span></a>
+      </div>
+      <div class="w3-quarter  w3-section">
+        <a target="_blank" style="text-decoration: none" href=https://www.twitter.com/valairan><span
+            class="w3-small">Twitter</span></a>
+      </div>
+      <div class="w3-quarter w3-section">
+        <a target="_blank" style="text-decoration: none"
+          href=https://www.youtube.com/channel/UCIkmt73lXPyXwCc9vE6hw3Q><span class="w3-small">YouTube</span></a>
+      </div>
+
+      <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+  </div>
 
 </body>
+
 </html>
