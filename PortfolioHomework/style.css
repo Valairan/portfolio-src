@@ -272,14 +272,6 @@ h6 {
 	line-height: 24px;
 }
 
-.content-section .thumbnail:hover h4,
-.content-section .thumbnail:hover p {
-	color: #AFAFAF;
-}
-
-.content-section .thumbnail:hover img {
-	opacity: 0.25;
-}
 
 .content-section .thumbnail:after {
 	font-family: 'FontAwesome';
@@ -305,13 +297,6 @@ h6 {
 	border: 3px solid transparent;
 }
 
-.content-section .thumbnail:hover:after {
-	top: 25%;
-	opacity: 1;
-	color: #FFFFFF;
-	background: #AF6204;
-	border: 3px solid #FFFFFF;
-}
 
 
 /*--- CONTACT ---*/
